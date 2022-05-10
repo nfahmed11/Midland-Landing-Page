@@ -19,167 +19,516 @@ body {
 h2 {
   font-size: 2.25em;
   line-height: 1.25em;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.1em;
   font-weight: 900;
   display: flex;
   justify-content: center;
   padding: 2rem;
+  text-align: center;
 }
 
-/* .sub_title {
-  font-size: 37px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;} */
+/* Header */
 
-  /* Header */
+#header {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  height: 3em;
+  line-height: 3em;
+  box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+}
 
+#header h3 {
+  position: absolute;
+  left: 1em;
+  top: 0;
+  height: 3em;
+  line-height: 3em;
+  margin: 0;
+  font-weight: 900;
+}
+
+#header h3 a {
+  font-size: 1.25em;
+  text-decoration: none;
+  color: rgb(24, 42, 78);
+  font-weight: 900;
+}
+
+#header nav {
+  position: absolute;
+  right: 0.5em;
+  top: 0;
+  height: 3em;
+  line-height: 3em;
+}
+
+#header nav ul {
+  margin: 0;
+}
+#header nav ul li {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-size: 0.9em;
+}
+
+#header nav ul li a {
+  display: block;
+  color: rgb(24, 42, 78);
+  text-decoration: none;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 0.5em 0 0.5em;
+  outline: 0;
+}
+
+@media screen and (max-width: 736px) {
   #header {
-    position: fixed;
-    z-index: 10000;
+    height: 2.5em;
+    line-height: 2.5em;
+  }
+
+  #header h1 {
+    text-align: center;
+    position: relative;
     left: 0;
     top: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    height: 3em;
-    line-height: 3em;
-    box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+    height: 2.5em;
+    line-height: 2.5em;
   }
 
-  #header h3 {
-    position: absolute;
-    left: 1em;
-    top: 0;
-    height: 3em;
-    line-height: 3em;
-    margin: 0;
-    font-weight: 900;
-  }
-
-  #header h3 a {
-    font-size: 1.25em;
-    text-decoration: none;
-    color: rgb(24, 42, 78);
-    font-weight: 900;
+  #header h1 a {
+    font-size: 1em;
   }
 
   #header nav {
-    position: absolute;
-    right: 0.5em;
-    top: 0;
-    height: 3em;
-    line-height: 3em;
+    display: none;
   }
-
-  #header nav ul {
-    margin: 0;
-  }
-  #header nav ul li {
-    display: inline-block;
-    margin-left: 0.5em;
-    font-size: 0.9em;
-  }
-
-  #header nav ul li a {
-    display: block;
-    color: rgb(24, 42, 78);
-    text-decoration: none;
-    height: 3em;
-    line-height: 3em;
-    padding: 0 0.5em 0 0.5em;
-    outline: 0;
-  }
-
-  @media screen and (max-width: 736px) {
-    #header {
-      height: 2.5em;
-      line-height: 2.5em;
-    }
-
-    #header h1 {
-      text-align: center;
-      position: relative;
-      left: 0;
-      top: 0;
-      height: 2.5em;
-      line-height: 2.5em;
-    }
-
-    #header h1 a {
-      font-size: 1em;
-    }
-
-    #header nav {
-      display: none;
-    }
-  }
-
-  body {
-    padding-top: 3em;
-  }
-
-  @media screen and (max-width: 736px) {
-    body {
-      padding-top: 2.5em;
-    }
-  }
-
-  #intro {
-    height: 100vh;
-    background-image: url("https://img.freepik.com/free-photo/professional-skilled-female-architect-has-telephone-conversation-with-colleague-concentrated-into-papers-prepares-engineering-project-drinks-coffee-poses-coworking-space-busy-woman-engineer_273609-50626.jpg?t=st=1652114534~exp=1652115134~hmac=1f6eda0319e4141328775f5b503f2ae374784c6ec347170c238141c269e69f12&w=1800");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: rgba(24, 42, 78, 0.75); /* Tint color */
-    background-blend-mode: multiply;
-    border-bottom-left-radius: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #intro .content {
-    display: flex;
-    flex-direction: column;
-  }
-  .intro_header {
-    color: rgb(239, 192, 111);
-    font-size: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 900;
-  }
-  .intro_header h3 {
-    font-family: all-round-gothic, sans-serif;
-    font-weight: 500;
-    margin: 0;
-  }
-
-  /* About */
 }
-.about_text {
+
+body {
+  padding-top: 3em;
+}
+
+@media screen and (max-width: 736px) {
+  body {
+    padding-top: 2.5em;
+  }
+}
+
+#intro {
+  height: 100vh;
+  background-image: url("https://img.freepik.com/free-photo/professional-skilled-female-architect-has-telephone-conversation-with-colleague-concentrated-into-papers-prepares-engineering-project-drinks-coffee-poses-coworking-space-busy-woman-engineer_273609-50626.jpg?t=st=1652114534~exp=1652115134~hmac=1f6eda0319e4141328775f5b503f2ae374784c6ec347170c238141c269e69f12&w=1800");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgba(24, 42, 78, 0.75); /* Tint color */
+  background-blend-mode: multiply;
+  border-bottom-left-radius: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro .content {
+  display: flex;
+  flex-direction: column;
+}
+.intro_header {
+  color: rgb(239, 192, 111);
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 900;
+}
+.intro_header h3 {
+  font-family: all-round-gothic, sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* About */
+
+#about .about_text {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 .about_text_one,
-.about_text_two {
+.about_text_two,
+.about_text_three,
+.about_text_four {
   font-family: all-round-gothic, sans-serif;
   font-weight: 100;
   width: 50vw;
+  margin: 0.5em 0.5em;
+  height: 25vw;
+  border-radius: 0.5em;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .about_text_one {
   background-color: rgb(24, 42, 78);
   color: rgb(239, 192, 111);
+  font-size: 0.75em;
+
+  display: flex;
+  justify-content: space-around;
 }
+
 .about_text_two {
+  background-color: rgb(239, 192, 111);
+  color: rgb(24, 42, 78);
+}
+
+#about .about_services,
+#about .about_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about_text_three {
   align-items: center;
   display: flex;
   flex-direction: column;
   background-color: rgb(239, 192, 111);
   color: rgb(24, 42, 78);
+}
+
+.about_text_four {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(24, 42, 78);
+  color: rgb(239, 192, 111);
+
+  /* position: absolute; */
+  /* object-position: 0px -250px; */
+}
+#about .about_services h2,
+#about .about_text h2 {
+  padding: 0;
+}
+
+.about_text_one:hover {
+  /* animation: rtol 1s linear; */
+}
+
+@keyframes rtol {
+  0% {
+    transform: translateX(-200px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* Reviews - who we have worked with */
+
+#reviews {
+  height: 100vh;
+  background-image: url("https://img.freepik.com/free-vector/navy-brush-strokes-collection_53876-76972.jpg?t=st=1652139418~exp=1652140018~hmac=8d717b30ae3dc7a01baea0adbb6eeae05751459c101538eb24901c7cf122d84f&w=1380");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgba(24, 42, 78, 0.55); /* Tint color */
+  background-blend-mode: multiply;
+  border-bottom-right-radius: 500px;
+  color: rgba(255, 255, 255, 0.95);
+  margin-top: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#reviews p {
+  letter-spacing: 5px;
+  line-height: 3em;
+  font-weight: 100;
+  text-align: justify;
+  /* text-justify: inter-word; */
+}
+
+/* Reviews - Carousal - testimonials */
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+.carousel {
+  max-width: 37.5rem;
+  max-height: 20vw;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+#testimonials li {
+  margin: 0;
+  /* padding: 0; */
+  list-style: none;
+  height: 31vw;
+}
+
+#testimonials .carousel__snapper {
+  display: flex;
+}
+
+#carousel__slide1,
+#carousel__slide2,
+#carousel__slide3,
+#carousel__slide4,
+#carousel__slide5,
+#carousel__slide6,
+#carousel__slide7,
+#carousel__slide8 {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 50%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+  width: 100vw;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  background-color: rgb(239, 192, 111);
+  counter-increment: item;
+}
+
+.carousel__slide:nth-child(even) {
+  background-color: rgb(24, 42, 78);
+}
+
+.carousel__slide:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -40%, 70px);
+  font-size: 2em;
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+  margin-top: 353px;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: -1rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: -1rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: "";
+  z-index: 1;
+  background-color: #333;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+/* Reach-Demographics */
+#reach {
+  background-image: url("https://img.freepik.com/free-photo/gold-luxury-fabric-background-with-copy-space_46250-2188.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
+  height: 100vh;
+}
+
+.Reach_column {
+  columns: 3;
+}
+
+.Reach_column div {
+  text-align: center;
 }
 
 /* services */
@@ -197,7 +546,7 @@ h2 {
 
 #contact .box {
   background: rgba(249, 234, 207, 0.325);
-  height: 50vh;
+  /* height: 50vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -259,8 +608,8 @@ button {
 #footer {
   width: 100%;
   background: rgb(24, 42, 78);
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   padding: 20px 0 20px;
 }
 #footer ul {
@@ -269,6 +618,13 @@ button {
   justify-content: space-evenly;
   padding: 0em 35%;
   margin: 0;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 100;
 }
 
 #footer li {
