@@ -26,6 +26,7 @@ body {
   padding: 2rem;
   text-align: center;
   margin: 0;
+  color: rgb(24, 42, 78);
 }
 
 .grow {
@@ -47,7 +48,7 @@ body {
   height: 3em;
   line-height: 3em;
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
-  transition: background 1s;
+  transition: background 0.5s;
 }
 
 #header h3 {
@@ -65,7 +66,7 @@ body {
   text-decoration: none;
   color: rgb(24, 42, 78);
   font-weight: 900;
-  transition: color 1s;
+  transition: color 0.5s;
 }
 
 #header nav {
@@ -93,7 +94,7 @@ body {
   line-height: 3em;
   padding: 0 0.5em 0 0.5em;
   outline: 0;
-  transition: color 1s;
+  transition: color 0.5s;
 }
 
 @media screen and (max-width: 736px) {
@@ -233,6 +234,10 @@ h2.about_header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+#reviews h2 {
+  color: rgb(239, 192, 111);
 }
 #reviews p {
   letter-spacing: 5px;
@@ -520,8 +525,12 @@ h2.about_header {
   height: 50%;
 }
 
+#reach h3,
+#reach h2 {
+  color: rgba(255, 255, 255, 0.95);
+}
+
 #reach h3 {
-  color: rgb(24, 42, 78);
   font-size: 30px;
   margin: 0;
 }
