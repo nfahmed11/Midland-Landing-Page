@@ -43,10 +43,11 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  /* background: rgba(255, 255, 255, 0.95); */
+  background: rgba(255, 255, 255, 0.95);
   height: 3em;
   line-height: 3em;
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+  transition: background 1s;
 }
 
 #header h3 {
@@ -64,6 +65,7 @@ body {
   text-decoration: none;
   color: rgb(24, 42, 78);
   font-weight: 900;
+  transition: color 1s;
 }
 
 #header nav {
@@ -91,6 +93,7 @@ body {
   line-height: 3em;
   padding: 0 0.5em 0 0.5em;
   outline: 0;
+  transition: color 1s;
 }
 
 @media screen and (max-width: 736px) {
