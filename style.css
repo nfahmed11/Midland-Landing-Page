@@ -344,11 +344,12 @@ h2.about_header {
 }
 
 .Reach_column {
-  height: 100vh;
+  height: 80vh;
   color: rgb(239, 192, 111);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .Reachrow1 {
   height: 50%;
@@ -366,7 +367,9 @@ h2.about_header {
 
 .Reach_column div {
   text-align: center;
-  margin-bottom: 50px;
+}
+.reachbox {
+  padding: 10px 50px;
 }
 
 .reachBox1 {
@@ -778,7 +781,8 @@ button {
     font-size: smaller;
   }
 
-  #reach > div > div > div.Reachrow2 {
+  #reach > div > div > div.reachBox3,
+  #reach > div > div > div.reachBox4 {
     display: none;
   }
 
@@ -791,7 +795,8 @@ button {
     width: 75vw;
   }
 
-  #services > div > div > div.column1. #services > div > div > div.column2 {
+  #services > div > div > div.column1,
+  #services > div > div > div.column2 {
     align-items: baseline;
   }
 
