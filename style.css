@@ -43,7 +43,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  /* background: rgba(255, 255, 255, 0.95); */
   height: 3em;
   line-height: 3em;
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -513,6 +513,10 @@ h2.about_header {
   flex-direction: row;
   justify-content: space-around;
 }
+.Reachrow1 {
+  height: 50%;
+}
+
 #reach h3 {
   color: rgb(24, 42, 78);
   font-size: 30px;
