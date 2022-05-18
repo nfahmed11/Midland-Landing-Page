@@ -511,21 +511,21 @@ a:focus {
   font-weight: 800;
 }
 
-figure.effect-steve {
+figure.effect {
   z-index: auto;
   background: #000;
 }
 
-figure.effect-steve:before {
+figure.effect:before {
   box-shadow: 0 3px 30px rgba(0, 0, 0, 0.8);
   opacity: 0;
 }
 
-figure.effect-steve figcaption {
+figure.effect figcaption {
   z-index: 1;
 }
 
-figure.effect-steve img {
+figure.effect img {
   opacity: 1;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -533,20 +533,20 @@ figure.effect-steve img {
   transform: perspective(1000px) translate3d(0, 0, 0);
 }
 
-figure.effect-steve h2,
-figure.effect-steve p {
+figure.effect h2,
+figure.effect p {
   background: rgb(239, 192, 111);
   color: rgb(24, 42, 78);
 }
 
-figure.effect-steve h2 {
+figure.effect h2 {
   position: absolute;
   padding: 0.25em;
   bottom: 10px;
   width: 100%;
 }
 
-figure.effect-steve p {
+figure.effect p {
   margin-top: 1em;
   padding: 0.5em;
   font-weight: 800;
@@ -555,20 +555,20 @@ figure.effect-steve p {
   transition: opacity 0.75s, transform 0.75s;
 }
 
-figure.effect-steve:hover:before {
+figure.effect:hover:before {
   opacity: 1;
 }
 
-figure.effect-steve:hover img {
+figure.effect:hover img {
   -webkit-transform: perspective(1000px) translate3d(0, 0, 21px);
   transform: perspective(1000px) translate3d(0, 0, 21px);
 }
 
-figure.effect-steve:hover h2:before {
+figure.effect:hover h2:before {
   opacity: 0;
 }
 
-figure.effect-steve:hover p {
+figure.effect:hover p {
   opacity: 1;
 }
 
